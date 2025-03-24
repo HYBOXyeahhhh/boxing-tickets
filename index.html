@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ボクシング試合チケット応募フォーム</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .match-info {
+      margin-bottom: 30px;
+    }
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ボクシング試合チケット応募</h1>
+    
+    <div class="match-info">
+      <h2>試合の詳細</h2>
+      <p>日付：4月18日（金）</p>
+      <p>試合順：第5試合</p>
+      <p>開始時間：19:20頃（前後する可能性あり）</p>
+    </div>
+
+    <form action="submit.html" method="post">
+      <label for="name">お名前</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="address">チケットの郵送先住所</label>
+      <input type="text" id="address" name="address" required>
+
+      <input type="submit" value="応募する">
+    </form>
+  </div>
+</body>
+</html>
